@@ -2,7 +2,7 @@
   "name": "analytiics",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/PrathamSampat/analytics",
+  "homepage": "https://PrathamSampat.github.io/assignment",
   "dependencies": {
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.9.3",
@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "ghpages": "0.0.10"
   }
 }

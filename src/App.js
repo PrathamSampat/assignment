@@ -50,75 +50,95 @@ function App() {
         label: "Rice",
         data: [four[0],five[0],six[0],seven[0],eight[0],nine[0],ten[0],eleven[0]],
         fill: false,
-        borderColor: "#C35817"
+        borderColor: "#4cc9f0",
+        backgroundColor: '#4cc9f0'
       },
       {
         label: "Wheat",
         data: [four[1],five[1],six[1],seven[1],eight[1],nine[1],ten[1],eleven[1]],
         fill: false,
-        borderColor: "#7E191B"
+        borderColor: "#4895ef",
+        backgroundColor: "#4895ef"
       },
       {
         label: "Coarse Cereals",
         data: [four[2],five[2],six[2],seven[2],eight[2],nine[2],ten[2],eleven[2]],
         fill: false,
-        borderColor: "#C19A6B"
+        borderColor: "#4361ee",
+        backgroundColor: "#4361ee"
       },
       {
         label: "Pulses",
         data: [four[3],five[3],six[3],seven[3],eight[3],nine[3],ten[3],eleven[3]],
         fill: false,
-        borderColor: "#E2F516"
+        borderColor: "#3f37c9",
+        backgroundColor: "#3f37c9"
       },
       {
         label: "Vegetables",
         data: [four[4],five[4],six[4],seven[4],eight[4],nine[4],ten[4],eleven[4]],
         fill: false,
-        borderColor: "#31906E"
+        borderColor: "#31906E",
+        backgroundColor: "#31906E"
       },
       {
         label: "Fruits",
         data: [four[5],five[5],six[5],seven[5],eight[5],nine[5],ten[5],eleven[5]],
         fill: false,
-        borderColor: "Purple"
+        borderColor: "#480ca8",
+        backgroundColor: "#480ca8"
       },
       {
         label: "Milk",
         data: [four[6],five[6],six[6],seven[6],eight[6],nine[6],ten[6],eleven[6]],
         fill: false,
-        borderColor: "#893BFF"
+        borderColor: "#7209b7",
+        backgroundColor: "#7209b7"
       },
       {
         label: "Eggs, Fish and Meat",
         data: [four[7],five[7],six[7],seven[7],eight[7],nine[7],ten[7],eleven[7]],
         fill: false,
-        borderColor: "#728FCE"
+        borderColor: "#b5179e",
+        backgroundColor: "#b5179e"
       },
       {
         label: "Oilseeds",
         data: [four[8],five[8],six[8],seven[8],eight[8],nine[8],ten[8],eleven[8]],
         fill: false,
-        borderColor: "#7D0552"
+        borderColor: "#9b5de5",
+        backgroundColor: "#9b5de5"
       },
       {
         label: "Sugarcane",
         data: [four[9],five[9],six[9],seven[9],eight[9],nine[9],ten[9],eleven[9]],
         fill: false,
-        borderColor: "#7D0552"
+        borderColor: "#8e7dbe",
+        backgroundColor: "#8e7dbe"
       },
       {
         label: "Fibers",
         data: [four[10],five[10],six[10],seven[10],eight[10],nine[10],ten[10],eleven[10]],
         fill: false,
-        borderColor: "black"
+        borderColor: "#5e548e",
+        backgroundColor: "#5e548e"
       }
     ]
   };
 
   return (
     <ChakraProvider>
-    <VStack className="App" bgGradient='linear(to-b, #0033cc 5%, #66ffff)'>
-      <input 
+    <VStack className="App" >
+      
+      <p></p>
+      <p></p>
+      <Container maxW='60%' maxH='500px'color='white'>
+        <LineChart ChartData={dataset}/>
+      </Container>
+      <p></p>
+      <p></p>
+      <input
+      class="foo"
       type="file"
       onChange={(e) => {
         const file = e.target.files[0];
@@ -129,7 +149,7 @@ function App() {
       <p></p>
       <Container maxWidth={"100%"}>
       <table class="table">
-        <thead class="table-dark">
+        <thead class="table-darker">
           <tr>
             <th scope="col">Crop</th>
             <th scope="col">2004-05</th>
@@ -161,9 +181,7 @@ function App() {
         </table>
         </Container>
 
-      <Container maxW='60%' maxH='500px'color='white'>
-        <LineChart ChartData={dataset}/>
-      </Container>
+      
 
   </VStack>
   </ChakraProvider>

@@ -110,7 +110,7 @@ function App() {
         label: "Fibers",
         data: [four[10],five[10],six[10],seven[10],eight[10],nine[10],ten[10],eleven[10]],
         fill: false,
-        borderColor: "#B048B5"
+        borderColor: "black"
       }
     ]
   };
